@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <packageId>ESCP.DunmerArmory</packageId>
+    <author>ESCP</author>
+    <name>ESCP - Dunmer Armory</name>
+    <description>The Elder Scrolls Collaboration Project Presents: Dunmer Armory, craftable chitin and bonemold armor from Morrowind. Only Dunmer crafters can make it, and Dunmer soldiers wear it into battle. Requires ESCP - Dunmer.</description>
+    <url>https://github.com/ElderScrollsCollaborationProject</url>
+    <supportedVersions>
+        <li>1.6</li>
+        <li>1.7</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>Rick.ESCP.Dunmer</packageId>
+            <displayName>ESCP - Dunmer</displayName>
+            <downloadUrl>https://github.com/ElderScrollsCollaborationProject</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Rick.ESCP.Core.Tools</li>
+        <li>Rick.ESCP.Dunmer</li>
+    </loadAfter>
+
+</ModMetaData>

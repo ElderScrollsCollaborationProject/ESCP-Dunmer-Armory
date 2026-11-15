@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="ESCP_DunmerArmorBase" ParentName="ApparelBase" Abstract="True">
+        <thingClass>Apparel</thingClass>
+        <category>Item</category>
+        <selectable>true</selectable>
+        <pathCost>14</pathCost>
+        <useHitPoints>true</useHitPoints>
+        <graphicData>
+            <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+        </graphicData>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <altitudeLayer>Item</altitudeLayer>
+        <alwaysHaulable>true</alwaysHaulable>
+        <tickerType>Never</tickerType>
+        <smeltable>false</smeltable>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ESCP_Dunmer_Apparel</li>
+        </tradeTags>
+        <techLevel>Medieval</techLevel>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_DunmerArmorBase">
+        <defName>ESCP_Apparel_Dunmer_Chitin_Cuirass</defName>
+        <label>chitin cuirass</label>
+        <description>Overlapping plates of lacquered insect shell on a leather backing, the common armor of Morrowind. It weighs little and turns a blade well enough, though a heavy blow will crack it. Dunmer militia and Ashlander hunters wear it because shell is cheap and the ash wastes punish anyone in hot steel.</description>
+        <graphicData>
+            <texPath>Apparel/Chitin_Armor/ESCP_Chitin_Armor_Chest</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>320</MarketValue>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>2.5</Mass>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.25</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>8</Insulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Chitin_Armor/ESCP_Chitin_Armor_Chest</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>ESCP_Dunmer_Chitin</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_DunmerArmorBase">
+        <defName>ESCP_Apparel_Dunmer_Chitin_Helm</defName>
+        <label>chitin helm</label>
+        <description>A shell cap with a leather face wrap and dark glass eye pieces, made for walking through an ash storm as much as for fighting. Plenty of Ashlanders own one and few of them ever take it off outdoors.</description>
+        <graphicData>
+            <texPath>Apparel/Chitin_Armor/ESCP_Chitin_Armor_head</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>130</MarketValue>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>3500</WorkToMake>
+            <Mass>0.7</Mass>
+            <ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.20</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
+            <EquipDelay>0.6</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Chitin_Armor/ESCP_Chitin_Armor_head</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <renderSkipFlags>
+                <li>Hair</li>
+                <li>Beard</li>
+            </renderSkipFlags>
+            <tags>
+                <li>ESCP_Dunmer_Chitin</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_DunmerArmorBase">
+        <defName>ESCP_Apparel_Dunmer_Bonemold_Cuirass</defName>
+        <label>bonemold cuirass</label>
+        <description>Real bone, shaped and reinforced with resin, then molded into a breastplate with heavy pauldrons. Bonemold is expensive medium armor, and in Morrowind wearing it says as much about the owner's standing as their trade. It holds an edge off as well as good steel and does not heat up in the sun.</description>
+        <graphicData>
+            <texPath>Apparel/Bonemold_Armor/ESCP_Bonemold_Armor_Chest</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>850</MarketValue>
+            <MaxHitPoints>260</MaxHitPoints>
+            <WorkToMake>13000</WorkToMake>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>10</Insulation_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Bonemold_Armor/ESCP_Bonemold_Armor_Chest</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>ESCP_Dunmer_Bonemold</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_DunmerArmorBase">
+        <defName>ESCP_Apparel_Dunmer_Bonemold_Helm</defName>
+        <label>bonemold helm</label>
+        <description>A pointed, full-faced helm of resin-set bone with a single slit to see through. Outlanders tend to find the look unsettling, and most Dunmer officers have no objection to that.</description>
+        <graphicData>
+            <texPath>Apparel/Bonemold_Armor/ESCP_Bonemold_Armor_head</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>300</MarketValue>
+            <MaxHitPoints>190</MaxHitPoints>
+            <WorkToMake>5500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.30</ArmorRating_Heat>
+            <Insulation_Cold>3</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Bonemold_Armor/ESCP_Bonemold_Armor_head</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <renderSkipFlags>
+                <li>Hair</li>
+                <li>Beard</li>
+            </renderSkipFlags>
+            <tags>
+                <li>ESCP_Dunmer_Bonemold</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+</Defs>

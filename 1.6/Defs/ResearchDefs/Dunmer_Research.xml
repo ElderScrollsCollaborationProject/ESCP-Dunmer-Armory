@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>ESCP_Research_Dunmer_Chitin</defName>
+        <label>chitin armoring</label>
+        <description>Learn how Dunmer armorers cut, glue and lacquer the shells of giant insects into light plate. Morrowind has more insects than iron, so this is the armor of ordinary Dunmer soldiers and Ashlander hunters alike. Only Dunmer are taught the craft.</description>
+        <baseCost>500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>ComplexClothing</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+        <tab>ESCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>ESCP_Research_Dunmer_Bonemold</defName>
+        <label>bonemold armoring</label>
+        <description>Learn the costlier Dunmer method of shaping real bone and reinforcing it with a resin until it holds up as well as steel plate. Bonemold is medium armor for those who can afford it, and the Great Houses have long kept their officers and nobles in it. Requires smithing to shape and cure the pieces.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>ESCP_Research_Dunmer_Chitin</li>
+            <li>ESCP_Research_Bonemold</li>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+        <tab>ESCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
+</Defs>

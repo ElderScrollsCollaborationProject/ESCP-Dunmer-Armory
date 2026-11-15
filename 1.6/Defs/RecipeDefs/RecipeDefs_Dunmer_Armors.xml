@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef>
+        <defName>ESCP_Recipe_Make_Dunmer_Chitin_Cuirass</defName>
+        <label>make chitin cuirass</label>
+        <description>Cut and lacquer insect shell into overlapping plates, then stitch them to a leather backing.</description>
+        <jobString>Stitching chitin cuirass.</jobString>
+        <workAmount>7000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        <recipeUsers>
+            <li>HandTailoringBench</li>
+            <li>ElectricTailoringBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_Item_Chitin</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+            <thingDefs>
+                <li>ESCP_Item_Chitin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_Apparel_Dunmer_Chitin_Cuirass>1</ESCP_Apparel_Dunmer_Chitin_Cuirass>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>ESCP_Research_Dunmer_Chitin</researchPrerequisite>
+        <modExtensions>
+            <li Class="ESCP.Crafting.RecipeExtension_XenotypeCheck">
+                <requireXenotype>ESCP_Xenotype_Dunmer</requireXenotype>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>ESCP_Recipe_Make_Dunmer_Chitin_Helm</defName>
+        <label>make chitin helm</label>
+        <description>Shape a shell cap and fit it with a leather face wrap and dark glass eye pieces.</description>
+        <jobString>Stitching chitin helm.</jobString>
+        <workAmount>3500</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        <recipeUsers>
+            <li>HandTailoringBench</li>
+            <li>ElectricTailoringBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_Item_Chitin</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+            <thingDefs>
+                <li>ESCP_Item_Chitin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_Apparel_Dunmer_Chitin_Helm>1</ESCP_Apparel_Dunmer_Chitin_Helm>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>ESCP_Research_Dunmer_Chitin</researchPrerequisite>
+        <modExtensions>
+            <li Class="ESCP.Crafting.RecipeExtension_XenotypeCheck">
+                <requireXenotype>ESCP_Xenotype_Dunmer</requireXenotype>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>ESCP_Recipe_Make_Dunmer_Bonemold_Cuirass</defName>
+        <label>make bonemold cuirass</label>
+        <description>Shape bone and set it in resin, then cure the pieces into a breastplate and heavy pauldrons.</description>
+        <jobString>Forging bonemold cuirass.</jobString>
+        <workAmount>13000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_BonemoldItem</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+            <thingDefs>
+                <li>ESCP_BonemoldItem</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_Apparel_Dunmer_Bonemold_Cuirass>1</ESCP_Apparel_Dunmer_Bonemold_Cuirass>
+        </products>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>ESCP_Research_Dunmer_Bonemold</researchPrerequisite>
+        <modExtensions>
+            <li Class="ESCP.Crafting.RecipeExtension_XenotypeCheck">
+                <requireXenotype>ESCP_Xenotype_Dunmer</requireXenotype>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>ESCP_Recipe_Make_Dunmer_Bonemold_Helm</defName>
+        <label>make bonemold helm</label>
+        <description>Mold resin-set bone into a pointed, full-faced helm with a single eye slit.</description>
+        <jobString>Forging bonemold helm.</jobString>
+        <workAmount>5500</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_BonemoldItem</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+            <thingDefs>
+                <li>ESCP_BonemoldItem</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_Apparel_Dunmer_Bonemold_Helm>1</ESCP_Apparel_Dunmer_Bonemold_Helm>
+        </products>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>ESCP_Research_Dunmer_Bonemold</researchPrerequisite>
+        <modExtensions>
+            <li Class="ESCP.Crafting.RecipeExtension_XenotypeCheck">
+                <requireXenotype>ESCP_Xenotype_Dunmer</requireXenotype>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+</Defs>
